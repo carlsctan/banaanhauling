@@ -68,7 +68,7 @@
                             <?php
                                 while($row = mysql_fetch_array($resultrequest)){ 
                                     echo "<tr>
-                                          <td>".$row['del_assign_id']."</td>
+                                          <td>".$row['del_track_no']."</td>
                                           <td>".$row['req_id']."</td>
                                           <td>".$row['truck_id']."</td>
                                           <td>".$row['emp_id']."</td>
@@ -150,16 +150,18 @@
                           
                           <form id="deliveryform" action="deliveryAssignment.php" method="post">
                             Request ID :<input class="form-control" name="deliv_req_id" type="text" id="placeID"/><br>
-                            Track no :
+                            Truck no :
                              <select class="form-control" name="selc_t_n">
                              <?php
-                                $querytruck = "select * from truck";
+                                $querytruck = "select * from truck where truck_status= 'ok'";
                                 $resulttruck = mysql_query($querytruck);
                                 while($rowt = mysql_fetch_array($resulttruck)){
+                                 
                                   echo"
-                                        <option value=".$rowt['truck_id'].">".$rowt['truck_id']."-".$rowt['truck_type']."-".$rowt['truck_status']."</option>
+                                        <option value=".$rowt['truck_id'].">".$rowt['truck_id']."-".$rowt['truck_type']."</option>
                                   ";
-                                }
+                                
+                              }
                               ?>  
                             </select>
                             <br/>
@@ -177,7 +179,7 @@
                               ?>  
                             </select>
                             <br/>
-                            Amout of Comission :<input class="form-control" name="commission" type="text"/><br>
+                            Price :<input class="form-control" name="price" type="text"/><br>
                             <button class="btn btn-primary">submit</button>
                           </form>
                         </div> 

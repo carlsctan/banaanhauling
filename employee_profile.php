@@ -61,7 +61,7 @@
                					 	<tbody>
 
                             <?php
-                              $querydeliverassig = "select * from delivery_assignment where emp_id={$_SESSION['UserID']} and process='activate'";
+                              $querydeliverassig = "select * from delivery_assignment where emp_id={$_SESSION['UserID']} and progress='activate'";
                               $resultdeliverassig = mysql_query($querydeliverassig);
                  					 		while($rowd = mysql_fetch_array($resultdeliverassig)){ 
                                 $query="select progress from request where req_id='{$rowd['req_id']}'";
@@ -70,9 +70,9 @@
                  					 			  echo "
 
                                         <tr class='deliv_info_row'>
-                                            <td class='delivery_id'>".$rowd['del_assign_id']."<td>
+                                            <td class='delivery_id'>".$rowd['del_track_no']."</td>
                                           <td>".$rowd['req_id']."</td>
-                                          <td>".$rowd['truck_id']."
+                                          <td>".$rowd['truck_id']."</td>
                                           <td><button class='btn terminate_bt'>".$row['progress']."</button></td>
                  					 			        </tr> ";
                               }
@@ -193,7 +193,6 @@
                 datatype:"",
                 data:data,
                 success:function(){
-                 alert("sucess");
                 },
                 error:function(){
                   alert("No conection");

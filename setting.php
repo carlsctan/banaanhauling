@@ -15,7 +15,7 @@ require('banan_dbcon.php');
           $query="update users SET username = '{$_POST['uname']}',fname = '{$_POST['fname']}',mname = '{$_POST['mname']}',lname = '{$_POST['lname']}',user_email = '{$_POST['email']}',user_address = '{$_POST['addr']}',contact_no = '{$_POST['cont_no']}' where user_id = '$Uid'";
           $result = mysql_query($query) or die(mysql_error());
           $_SESSION['Username'] = $row['username'];
-          header('Location: setting.php');
+          header('Location: profile.php');
   }
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 	require('banan_dbcon.php');
-	$query  = "select req_id from delivery_assignment where del_assign_id ='{$_POST['delivery_id']}'";
+	$query  = "select req_id from delivery_assignment where del_track_no ='{$_POST['delivery_id']}'";
     $result = mysql_query ($query)or die(mysql_error());
     $row = mysql_fetch_array($result);
 

@@ -40,7 +40,13 @@ session_start();
                                         <p>Do you have an account?</p>
                                         <p><a class="btn btn-lg btn-primary" href="register.php" role="button">Sign up today</a></p>
                                     </div>';
-                            }
+                                }
+                                else{
+                                    echo '<div class="carousel-caption">
+                                        <h1>Spread the word! Use Banan!</h1>
+                                        <p><a class="btn btn-lg btn-primary" href="index.php#contact_us" role="button">Contact Us</a></p>       
+                                    </div>';
+                                }
                             ?>
                         </div>
                     </div>
@@ -65,6 +71,12 @@ session_start();
                                         <p><a class="btn btn-lg btn-primary" href="signin.php" role="button">Sign In</a></p>
                                     </div>';
                                 }
+                                else{
+                                    echo '<div class="carousel-caption">
+                                        <h1>See our rates!</h1>
+                                        <p><a class="btn btn-lg btn-primary" href="learnmore.php#trucks" role="button">Rates</a></p>
+                                    </div>';
+                                }
                             ?>
                         </div>
                     </div>
@@ -79,58 +91,63 @@ session_start();
                 <hr class="featurette-divider">
 
                 <div class="row featurette">
-                    <div class="col-md-5">
-                        <img class="featurette-image img-responsive" src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
                     <div class="col-md-7">
                         <h1>Freight companies</h1>
                         <h3>Freight companies are companies that specialize in the moving (or "forwarding") of 
                         freight, or cargo, from one place to another.... 
-						</h3>
+                        </h3>
                         <p><a class="btn btn-default" href="learnmore.php#freight" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive" src="images/haul.jpg" height="341" width="341" alt="Generic placeholder image">
                     </div>
                 </div>
 
                 <hr class="featurette-divider">
 
                 <div class="row featurette">
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive" src="images/bananhauling_logo.jpg" alt="Generic placeholder image">
+                    </div>
                     <div class="col-md-7">
                         <h1>Banan Hauling</h1>
                         <h3>Banan Hauling Services is also a domestic freight company here in the Philippines, 
                         specifically here in Cebu City....</h3>
                         <p><a class="btn btn-default" href="learnmore.php#banan" role="button">View details &raquo;</a></p>
                     </div>
-                    <div class="col-md-5">
-                        <img class="featurette-image img-responsive" src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
                 </div>
 
                 <hr class="featurette-divider">
 
                 <div class="row featurette">
-                    <div class="col-md-5">
-                        <img class="featurette-image img-responsive" src="holder.js/500x500/auto" alt="Generic placeholder image">
-                    </div>
                     <div class="col-md-7">
                         <h1>Company History</h1>
                         <h3>The company has been serving other huge companies like Purefoods, 
-						Del Monte, and other large companies in delivering their products safely and on time....
-						</h3>
+                        Del Monte, and other large companies in delivering their products safely and on time....
+                        </h3>
                         <p><a class="btn btn-default" href="learnmore.php#facts" role="button">View details &raquo;</a></p>
                     </div>
+                    <div class="col-md-5">
+                        <img class="featurette-image img-responsive" src="images/book.png" height="40" width="400" alt="Generic placeholder image">
+                    </div>   
                 </div>
 
                 <hr class="featurette-divider">
 
-                <!-- /END THE FEATURETTES -->
 
-                <div  id="contact_us">
-                    <h2>Contact us</h2><br>
-                    <p>Telephone No.    <ins>512-5916</ins></p>
-                    <p>Celphone No.     <ins>09222844400 or 09192038020</ins><br>
-                    <p>Email Address:   <ins>bananhaulingservices@gmail.com</ins><p>
-                    <p>Office Address:  <ins>21 Madrigal Comp. Legaspi Extension San Roque Cebu City </ins></p>
+                <div  id="contact_us" class="row featurette">
+                    <div class="col-md-3">
+                        <img class="featurette-image img-responsive" src="images/contact.jpg" height="300" width="300" alt="Generic placeholder image">
+                    </div>
+                    <div class="col-md-9">
+                        <h2>Contact us</h2><br>
+                        <p>Telephone No.    <ins>512-5916</ins></p>
+                        <p>Celphone No.     <ins>09222844400 or 09192038020</ins><br>
+                        <p>Email Address:   <ins>bananhaulingservices@gmail.com</ins><p>
+                        <p>Office Address:  <ins>21 Madrigal Comp. Legaspi Extension San Roque Cebu City </ins></p>
+                    </div>       
                 </div>
+                <!-- /END THE FEATURETTES -->
 
             </div> <!-- /container -->   
         </div>     <!--Body-->  

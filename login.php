@@ -13,7 +13,7 @@ require('db_con.php');
 			$_SESSION['UserID'] = $row['user_id'];
 			$_SESSION['Username'] = $row['username'];
 			$_SESSION['UserType'] = $row['user_type'];
-			header('Location: index.php');
+			header('Location: profile.php');
 		}
 		else{
 			echo mysql_error();	
