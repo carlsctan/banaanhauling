@@ -7,6 +7,8 @@ session_start();
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
         <link href="css/carousel.css" rel="stylesheet">
         <link href="css/sticky-footer.css" rel="stylesheet">
+		<script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js"></script>
 		<style>
 			.center {
      			float: none;
@@ -22,13 +24,13 @@ session_start();
 	</head>
 	<body>
 		<?php
-				require('navbar.php');                                       
+			require('navbar.php');                                       
 		?>
-        <div class="wrap">  <!--Body-->
-        	<div class="container-fluid"><!-- headings/news coloums -->       		
+        <div class="wrap">  
+        	<div class="container-fluid">		
 				<div class="row" id="learn_more">
 					<h2>Learn More</h2>
-					<div class="col-md-3"> 
+					<div class="col-md-2"> 
 						<div class="bs-docs-sidebar hidden-print affix" role="complementary">
 							<ul class="nav bs-docs-sidenav">
 								<li><a href="#freight">Freight Company</a></li>
@@ -89,7 +91,7 @@ session_start();
 						<div id="findus">
 							<p> &nbsp Below is the google map location of the main office. For more accurate direction please visit our address <a href="https://www.google.com.ph/maps/@10.2936975,123.9065904,154m/data=!3m1!1e3">HERE!.</a></p>
 							<img src="images/5.png"   class="img-responsive" alt="Responsive image" >
-							<!--<div id="map_canvas"></div>-->
+
 						</div>
 						<div id="cv">
 							<p> &nbsp Below is a proof of BHS as a valid company business who pays full tax to the government. The document looks so old due to the fact and a proof that our business started since late 2000.</font></p>
@@ -104,9 +106,9 @@ session_start();
 							near the vicinity of the office due to the fact that he has built an outstanding reputaion and is admired by both his customers and employees for being a man of his word. 
 							So if you go to the said location and don't know where the manager is, just ask the bystanders "Where is daddy?" and they will help you look for him.</p>
 						</div> 
-					</div><!-- /information -->
+					</div>
 				</div>
-            </div> <!-- /container -->  
+            </div>  
         </div>
 
 
